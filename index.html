@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Признаки того, что вы...</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Признаки того, что вы...</h3>
+				</section>
+				<section>
+					<h3>Признаки того, что вы становитесь программистом</h3>
+					<p class="fragment">• вы обнаруживаете, что умеете чинить принтеры и переустанавливать винду</p>
+					<p class="fragment">• вы знаете, <strong>что</strong> на самом деле называется процессором</p>
+					<p class="fragment">• друзья ваших родственников обращаются к вам на «тыж»</p>
+				</section>
+				<section>
+					<h3>Признаки того, что на вас накакал голубь</h3>
+					<p class="fragment">• вам показалось, что сверху что-то капнуло</p>
+					<p class="fragment">• дождя нет</p>
+					<p class="fragment">• <span style="opacity:0.7;">(опционально)</span> вас обогнал улыбающийся прохожий</p>
+					<p class="fragment">• у вас становится мокро на душе</p>
+					<p class="fragment">• вас посещает надежда о скором богатстве</p>
+					<p class="fragment">• вы знаете, что это неправда</p>
+				</section>
+				<section>
+					<h3>Посмотрев вверх вы видите это</h3>
+					<img class="r-stretch" src="sky.jpg"></img>
+				</section>
+				<section>
+					<h3>Признаки того, что вы худеете</h3>
+					<p class="fragment">• вы больше не покупаете себе «толстовки», вы покупаете «худи»</p>
+					<p class="fragment">• вы чаще выдыхаете</p>
+					<p class="fragment">• вы не смотрите вниз</p>
+					<p class="fragment">• глядя в зеркало, вы каждый раз отмечаете, насколько прекрасны ваши глаза</p>
+					<p class="fragment">• вам нравится мечтать</p>
+				</section>
+				<section>
+					<h3>Ростовский блиц</h3>
+					(признаков)
+				</section>
+				<section>
+					<h3>Признаки того, что вы</h3>
+					<p class="fragment">• <strong>гопник-поэт:</strong> вы сочиняете стих, когда разведете какого-нибудь лоха на вдохновение</p>
+					<p class="fragment">• <strong>гопник-веган:</strong> вы заставляете всех пацанов на районе перейти на семечки папайи</p>
+					<p class="fragment">• <strong>гопник-блоггер:</strong> вы подписываете встречных на свой канал и находите у них в карманах лайки</p>
+					<p class="fragment">• <strong>гопник-миллениал:</strong> вы ловите сверстников и заставляете их изобретать</p>
+				</section>
+				<section>
+					<p class="fragment preload">• <strong>гопник-математик:</strong> вы можете решить любое уравнение, количество неизвестных в котором не превышает количество пацанов у подъезда</p>
+					<p class="fragment">• <strong>гопник-философ:</strong> вы поняли, что в платоновской пещере были не идеи, а понятия</p>
+					<p class="fragment">• <strong>гопник-эколог:</strong> вы помогаете разным оленям сбросить рога</p>
+				</section>
+				<section>
+					<p class="fragment preload">• <strong>гопник-художник:</strong> любите позвать друзей на сходку, чтобы показать свою технику владения пером</p>
+					<p class="fragment">• <strong>гопник-астроном:</strong> вы изучаете движение небесных чертил</p>
+					<p class="fragment">• <strong>гопник-просветленный:</strong> в Бесконечность у вас распахнулось не Сознание, а свой район</p>
+				</section>
+				<section>
+					<img class="r-stretch" src="theend.jpg"></img>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});// has been defined with the 'preload' class
+			Reveal.addEventListener('slidechanged', function(event) {
+			if (event.currentSlide.querySelectorAll('.preload[data-fragment-index="0"]').length > 0) {
+				Reveal.nextFragment();
+			}
+			});
+		</script>
+	</body>
+</html>
